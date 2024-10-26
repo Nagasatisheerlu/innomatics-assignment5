@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bootstrap Demo - Innomatics Assignment 5</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+    <style>
+      html,
+      body {
+        margin: 0;
+        padding: 0;
+      }
+      .navbar-toggler-icon {
+        background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='white' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+      }
+
+      .py-5 {
+        padding-top: 9rem !important;
+        padding-bottom: 7rem !important;
+      }
+      .bg-image {
+        height: 97vh;
+        background-image: linear-gradient(
+            rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.5)
+          ),
+          url("https://content3.jdmagicbox.com/comp/anantapur/27/9999PMULHYDSTDS000127/catalogue/chandra-super-speciality-hospitals-kamalanagar-anantapur-hospitals-1xt20pm.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100%;
+      }
+      .text-shadow {
+        text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); /* Horizontal, Vertical, Blur Radius, Color */
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg bg-black sticky-top">
+      <div class="container-fluid mx-5">
+        <a class="navbar-brand text-light" href="#Home">Healthcare Center</a>
+        <button
+          class="navbar-toggler btn-light"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="collapse navbar-collapse justify-content-end"
+          id="navbarNav"
+        >
+          <ul class="navbar-nav nav-underline">
+            <li class="nav-item">
+              <a class="nav-link text-light" aria-current="page" href="#Home"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-light" href="#Feature">Departments</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-light" href="#Timings">Timings</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-light" href="#Contact">Contact Us</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <div
+      class="bg-image d-flex justify-content-center align-items-center px-4 py-5 text-center"
+      id="Home"
+    >
+      <div class="py-5">
+        <h1 class="display-5 fw-bold text-light text-shadow">
+          Welcome to Our Multi-Specialty Hospital
+        </h1>
+        <div class="col-lg-6 mx-auto">
+          <p class="fs-5 mb-4 text-light text-shadow">
+            Providing top-notch healthcare services across various specialties.
+            Our team of experienced doctors and medical staff are here to ensure
+            your health and well-being. Discover our state-of-the-art facilities
+            and compassionate care today.
+          </p>
+          <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+            <button
+              type="button"
+              class="btn btn-info btn-lg px-4 me-sm-3 fw-bold text-light"
+            >
+              Book an Appointment
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container py-4" id="Feature">
+      <h2 class="pb-2 border-bottom">Our Specialties</h2>
+
+      <div class="row row-cols-1 row-cols-md-3 g-4 py-3">
+        <!-- Feature 1 -->
+        <div class="col" data-aos="flip-left">
+          <div class="card h-100 text-center bg-black">
+            <img
+              src="https://lifelinehospitalkerala.com/wp-content/uploads/2024/09/woman-is-holding-heart-shaped-human-heart-with-right-hand-scaled.jpg.webp"
+              class="card-img-top"
+              alt="Cardiology"
+            />
+            <div class="card-body">
+              <h5 class="card-title text-light">Cardiology</h5>
+            </div>
+          </div>
+        </div>
+
+        <!-- Feature 2 -->
+        <div class="col" data-aos="flip-left">
+          <div class="card h-100 text-center bg-black">
+            <img
+              src="https://drvijayanandreddy.com/wp-content/uploads/2023/12/Medical-Oncology-01.png"
+              class="card-img-top"
+              alt="Oncology"
+            />
+            <div class="card-body">
+              <h5 class="card-title text-light">Oncology</h5>
+            </div>
+          </div>
+        </div>
+
+        <!-- Feature 3 -->
+        <div class="col" data-aos="flip-left">
+          <div class="card h-100 text-center bg-black">
+            <img
+              src="https://ashahospitals.co/upload/2021/05/Neurology-Neurosurgery.jpg"
+              class="card-img-top"
+              alt="Neurology"
+            />
+            <div class="card-body">
+              <h5 class="card-title text-light">Neurology</h5>
+            </div>
+          </div>
+        </div>
+
+        <!-- Feature 4 -->
+        <div class="col" data-aos="flip-left">
+          <div class="card h-100 text-center bg-black">
+            <img
+              src="https://www.lecresthospital.com/blog/wp-content/uploads/2022/05/pediatrician-doctor-ghaziabad.jpg"
+              class="card-img-top"
+              alt="Pediatrics"
+            />
+            <div class="card-body">
+              <h5 class="card-title text-light">Pediatrics</h5>
+            </div>
+          </div>
+        </div>
+
+        <!-- Feature 2 -->
+        <div class="col" data-aos="flip-left">
+          <div class="card h-100 text-center bg-black">
+            <img
+              src="https://www.edhacare.com/storage/departments/1681112694orthopedic.jpg"
+              class="card-img-top"
+              alt="Orthopedics"
+            />
+            <div class="card-body">
+              <h5 class="card-title text-light">Orthopedics</h5>
+            </div>
+          </div>
+        </div>
+
+        <!-- Feature 3 -->
+        <div class="col" data-aos="flip-left">
+          <div class="card h-100 text-center bg-black">
+            <img
+              src="https://vikaashospitals.com/wp-content/uploads/2024/03/gasterology.webp"
+              class="card-img-top"
+              alt="Gastroenterology"
+            />
+            <div class="card-body">
+              <h5 class="card-title text-light">Gastroenterology</h5>
+            </div>
+          </div>
+        </div>
+
+        <!-- Feature 1 -->
+        <div class="col" data-aos="flip-left">
+          <div class="card h-100 text-center bg-black">
+            <img
+              src="https://ojashospital.co.in/wp-content/uploads/2022/10/ojas-urology.jpg"
+              class="card-img-top"
+              alt="Urology"
+            />
+            <div class="card-body">
+              <h5 class="card-title text-light">Urology</h5>
+            </div>
+          </div>
+        </div>
+
+        <!-- Feature 2 -->
+        <div class="col" data-aos="flip-left">
+          <div class="card h-100 text-center bg-black">
+            <img
+              src="https://mydoctorerina.com.au/__static/b6f89881d3f8b0c97dadd600a7893411/reasons-to-visit-diabetes-centre.png"
+              class="card-img-top"
+              alt="Diabetes clinic"
+            />
+            <div class="card-body">
+              <h5 class="card-title text-light">Diabetes clinic</h5>
+            </div>
+          </div>
+        </div>
+
+        <!-- Feature 3 -->
+        <div class="col" data-aos="flip-left">
+          <div class="card h-100 text-center bg-black">
+            <img
+              src="https://www.cozmoderm.com/wp-content/uploads/2023/09/plastic-surgery.jpg"
+              class="card-img-top"
+              alt="Plastic surgery"
+            />
+            <div class="card-body">
+              <h5 class="card-title text-light">Plastic surgery</h5>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container py-4" id="Timings">
+      <h2 class="pb-2 border-bottom">Timings</h2>
+      <h4 class="mt-4 mx-4">Mon - Sun - 8:00am - 10:00pm</h4>
+    </div>
+    <div class="container py-4" id="Contact">
+      <h2 class="pb-2 border-bottom">Contact Us</h2>
+      <form>
+        <div class="mb-3">
+          <label for="exampleFullName" class="form-label">Full Name</label>
+          <input type="password" class="form-control" id="exampleFullName" />
+        </div>
+        <div class="mb-3">
+          <label for="exampleInputEmail1" class="form-label"
+            >Email address</label
+          >
+          <input
+            type="email"
+            class="form-control"
+            id="exampleInputEmail1"
+            aria-describedby="emailHelp"
+          />
+          <div id="emailHelp" class="form-text">
+            We'll never share your email with anyone else.
+          </div>
+        </div>
+
+        <div class="mb-3">
+          <label for="exampleGender" class="form-label">Gender</label>
+          <div class="form-check">
+            <input
+              class="form-check-input"
+              type="radio"
+              name="flexRadioDefault"
+              id="flexRadioDefault1"
+            />
+            <label class="form-check-label" for="flexRadioDefault1">
+              Male
+            </label>
+          </div>
+          <div class="form-check">
+            <input
+              class="form-check-input"
+              type="radio"
+              name="flexRadioDefault"
+              id="flexRadioDefault2"
+              checked
+            />
+            <label class="form-check-label" for="flexRadioDefault2">
+              Female
+            </label>
+          </div>
+        </div>
+        <div class="mb-3">
+          <label for="comment">Comment:</label>
+          <textarea class="form-control" rows="5" id="comment"></textarea>
+        </div>
+        <div class="mb-3 form-check">
+          <input type="checkbox" class="form-check-input" id="exampleCheck1" />
+          <label class="form-check-label" for="exampleCheck1"
+            >Check me out</label
+          >
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+    </div>
+    <div class="container py-4">
+      <h2 class="pb-2 border-bottom">Location</h2>
+      <div class="ratio ratio-16x9 p-5">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15220.794429855236!2d78.3899895!3d17.4980302!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb91f3fdf6bde9%3A0x752db86a6ab3be2a!2sInnomatics%20Research%20Labs!5e0!3m2!1sen!2sin!4v1728371583742!5m2!1sen!2sin"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </div>
+    </div>
+    <div class="container-fluid bg-black">
+      <footer>
+        <p class="text-center text-light py-3">© 2024 Hospital</p>
+      </footer>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+      integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>
